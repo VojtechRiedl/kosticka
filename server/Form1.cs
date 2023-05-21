@@ -25,7 +25,7 @@ namespace server
 
             MysqlConnector.Instance.Connect();
 
-            string command = "SELECT * FROM leaderboard ORDER BY score";
+            string command = "SELECT * FROM leaderboard ORDER BY score DESC";
 
             MySqlDataReader reader = MysqlConnector.Instance.GetData(command);
             
